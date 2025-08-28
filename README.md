@@ -31,8 +31,8 @@ This is a simple PHP login system project with user authentication using a MySQL
 | Field    | Type        | Description                 |
 |----------|------------|-----------------------------|
 | id       | INT        | Primary key, auto-increment |
-| username | VARCHAR    | User's username             |
-| password | VARCHAR    | User's password (MD5 hash) |
+| username | VARCHAR    | User's username (admin)     |
+| password | VARCHAR    | User's password(MD5) 12345  |
 
 ### 3. `register.php`
 - Placeholder for user registration (currently only outputs `"register"`).  
