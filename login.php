@@ -43,10 +43,10 @@
 
 		//prepare and execute sql query
 		$sql = "select*from users where username =? and password =?";
-		    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("ss", $username, $password_hashed);
-    $stmt->execute();
-    $result = $stmt->get_result();
+		$stmt = $conn->prepare($sql);
+    	$stmt->bind_param("ss", $username, $password_hashed);
+    	$stmt->execute();
+    	$result = $stmt->get_result();
 
     // Check if user exists
     if ($result->num_rows > 0) {
